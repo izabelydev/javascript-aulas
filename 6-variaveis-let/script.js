@@ -13,6 +13,13 @@ console.log(nome2);
 nome2 = 'Marcos';
 console.log(nome2);
 
+//Passando o valor de uma variável para outra:
+let firstNumber = 5;
+let secondNumber = 10;
+let result = firstNumber * secondNumber;
+
+console.log(result);
+
 /*
 Regras para criar variáveis:
 -> Não podemos criar variáveis com palavras reservadas (palavras usadas nos comandos da linguagem. Ex: let, console, etc)
