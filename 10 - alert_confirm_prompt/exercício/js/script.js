@@ -1,0 +1,1 @@
+//Somar os valores de um prompt (converta para number) e no final coloque um alert com o resultado da adição
