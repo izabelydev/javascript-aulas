@@ -4,4 +4,4 @@ let num2 = prompt('Digite outro número:');
 
 soma = parseFloat(num1) + parseFloat(num2);
 
-alert('A soma dos números é: ' + soma);
+alert(`A soma dos números é: ${soma}`);
