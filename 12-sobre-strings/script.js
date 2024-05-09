@@ -4,7 +4,7 @@ let umaString = 'O rato roeu a roupa do rei de Roma';
 // "Um \"texto\""
 // "Uma barra invertida \\ literal"
 
-console.log(umaString[5]); //aponta o indice da variavel (de zero até o ultimo valor na memória)
+console.log('Esse:' + umaString[5]); //aponta o indice da variavel (de zero até o ultimo valor na memória)
 console.log(umaString.charAt(6));
 console.log(umaString.concat(', concatenar',' um',' texto')); //forma menos usada
 console.log(`${umaString}, concatenar um texto`); // forma mais usada e moderna
