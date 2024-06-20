@@ -16,5 +16,13 @@ function mostrarCard() {
             <div style="width: 500px; height: 500px; background-color: blue; color: #ffffff;">
                 <h1 class="titulo">${titulo}</h1>
                 <p class="descricao">${descricao}</p>
-            </div>`;
+            </div>
+            <button onclick="apagar()">Apagar</button>`;
+}
+
+function apagar() {
+    criarCardInput.innerHTML = ``;
+    mostrarCardInput.innerHTML = ``;
+
+    return criarCardInput, mostrarCardInput;
 }
