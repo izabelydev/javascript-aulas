@@ -10,7 +10,7 @@ function criarEscopo() {
         container.classList.add('plus');
         resultado.classList.add('show');
 
-        const imc = parseFloat(peso.value) / (parseFloat(altura.value * altura.value));
+        const imc = parseFloat(peso.value) / (parseFloat(altura.value.replace(',', '.') * altura.value.replace(',', '.')));
         
         const condicoes = 
         imc < 18.5 ? resultado.innerHTML = `<p style="background: #f16e6e;">IMC ${imc.toFixed(2)}, abaixo do peso.</p>` :
@@ -20,7 +20,6 @@ function criarEscopo() {
         imc >= 30 && imc <= 34.9 ? resultado.innerHTML = `<p style="background: #f1d26e;">IMC ${imc.toFixed(2)}, obesidade grau 1.</p>` :
         imc >= 35 && imc <= 39.9 ? resultado.innerHTML = `<p style="background: #f1b86e;">IMC ${imc.toFixed(2)}, obesidade grau 2.</p>` :
         imc >= 40 ? resultado.innerHTML = `<p style="background: #f16e6e;">IMC ${imc.toFixed(2)}, obesidade grau 3.</p>` :
-        typeof peso != 'number' || typeof altura != 'number' ? resultado.innerHTML = `<p style="background: #f86994;">Insira apenas números.</p>`: 
         resultado.innerHTML = `<p style="background: #f86994;">Insira apenas números.</p>`;
         
         return condicoes;
