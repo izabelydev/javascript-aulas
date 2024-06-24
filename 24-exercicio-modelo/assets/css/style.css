@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --primary-color: #009cda; 
+    --light-primary-color: #e1f2fd;
+    --primary-color: #5d9cfa; 
     --primary-color-darker: #03719c;
+    --teste: #f86994;
 }
 
 * {
@@ -21,10 +23,12 @@ body {
 
 .container {
     max-width: 640px;
+    height: 400px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid var(--primary-color-darker);
 }
 
 p, h1 {
@@ -42,6 +46,8 @@ form input {
     height: 50px;
     padding: 0 20px;
     border-radius: 8px;
+    border: none;
+    background: var(--light-primary-color);
 }
 
 form input:focus {
@@ -51,6 +57,7 @@ form input:focus {
 form button {
     border: none;
     background: var(--primary-color);
+    border: 1px solid var(--primary-color-darker);
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -58,6 +65,7 @@ form button {
     height: 50px;
     cursor: pointer;
     border-radius: 8px;
+    transition: all .5s;
 }
 
 form button:hover {
