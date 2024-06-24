@@ -19,8 +19,8 @@ function criarEscopo() {
         imc >= 25 && imc <= 29.9 ? resultado.innerHTML = `<p style="background: #f1ef6e;">IMC ${imc.toFixed(2)}, sobrepeso.</p>` :
         imc >= 30 && imc <= 34.9 ? resultado.innerHTML = `<p style="background: #f1d26e;">IMC ${imc.toFixed(2)}, obesidade grau 1.</p>` :
         imc >= 35 && imc <= 39.9 ? resultado.innerHTML = `<p style="background: #f1b86e;">IMC ${imc.toFixed(2)}, obesidade grau 2.</p>` :
-        imc >= 40 ? resultado.innerHTML = `<p style="background: #f16e6e;">IMC ${imc.toFixed(2)}, obesidade grau 3.</p>` :
-        resultado.innerHTML = `<p style="background: #f86994;">Insira apenas números.</p>`;
+        imc >= 40 ? resultado.innerHTML = `<p style="background: #f16e6e;">IMC ${imc.toFixed(2)}, obesidade grau 3.</p>` : typeof peso != 'number' || typeof altura != 'number' ?
+        resultado.innerHTML = `<p style="background: #f86994;">Insira apenas números.</p>` : resultado.innerHTML = `<p style="background: #f86994;">Insira apenas números.</p>`;
         
         return condicoes;
     }
