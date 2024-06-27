@@ -22,7 +22,7 @@ function leftZero (num) {
     return num >= 10 ? num : `0${num}`;
 }
 
-dateDocumentH1.innerHTML = `${weekName[week]}, ${day} de ${monthName[month]} de ${year}`;
-dateDocumentH3.innerHTML = `${hour}:${min}`
+dateDocumentH1.innerHTML = `${weekName[week]}, ${leftZero(day)} de ${monthName[month]} de ${year}`;
+dateDocumentH3.innerHTML = `${leftZero(hour)}:${leftZero(min)}`;
 
 
