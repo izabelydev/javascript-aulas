@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.288);
+    background: radial-gradient(circle, rgba(103, 135, 131, 1) 0%, rgba(42, 50, 82, 1) 33%, rgba(17, 26, 44, 1) 53%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin: 30px 0 10px;
+}
+
+button {
+    width: 150px;
+    height: 160px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(138, 182, 176, 0.171);
+    font-size: 25px;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid rgba(138, 182, 176, 0.5);
+    background: rgba(138, 182, 176, 0.3);
+}
+
+input {
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(138, 182, 176, 0.171);
+    font-size: 25px;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+input::placeholder {
+    color: #ffffff67;
+}
+
+input:focus {
+    outline: 1px solid rgba(138, 182, 176, 0.5);
+    box-shadow: 0px 0px 24px -1px rgba(138, 182, 176, 0.5);
+}
+
+.container {
+    width: 350px;
+    border: 1px solid rgba(138, 182, 176, 0.5);
+    border-radius: 15px;
+    margin: 100px auto;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    color: #ffffff;
+}
+
+.description {
+    width: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.description .text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 180px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content.plus {
+    height: 250px;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    overflow: hidden;
+}
+
+.allInputs {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.allInputs button.conversor {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    border-radius: 10px;
+    border: none;
+    background: rgba(138, 182, 176, 0.7);
+    font-size: 18px;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+.allInputs button.conversor:hover {
+    box-shadow: 0px 0px 18px -1px rgba(138, 182, 176, 0.5);
+    background: rgb(138, 175, 182);
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgba(138, 182, 176, 0.7);
+    transition: all .5s;
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+}
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.response {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
