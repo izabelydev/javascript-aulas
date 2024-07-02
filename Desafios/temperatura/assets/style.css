@@ -96,7 +96,7 @@ input:focus {
 }
 
 .content.plus {
-    height: 250px;
+    height: 260px;
     transition-property: height;
     transition-duration: .5s;
     transition-timing-function: linear;
@@ -150,5 +150,5 @@ input:focus {
 .response {
     text-align: center;
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
