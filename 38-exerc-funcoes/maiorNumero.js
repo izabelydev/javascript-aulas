@@ -1,3 +1,5 @@
+// usando função normal
+
 function maiorNumero(x, y) {
     // if (x > y) return x; // quando o if é pequeno não precisa de chaves
     // // assim que o código execulta return, o restante do código abaixo não será executado
