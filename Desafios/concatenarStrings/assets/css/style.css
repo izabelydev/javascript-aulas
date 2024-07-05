@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, .8);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form label, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    padding: 2px 8px;
+    transition: all .5s;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 12px 0px rgba(255,255,255,.2);
+}
+
+form .concludeBt {
+    width: 120px;
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+form .concludeBt:hover {
+    cursor: pointer;
+    color: rgb(65, 63, 63);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 16px 0px rgba(255,255,255,.2);
+}
+
+form .conclude {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+form.form, span.response {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    height: 260px;
+    margin: 190px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform .5s ease;
+    transform: translate(-500px);
+}
+
+form.form.active {
+    transform: translate(0);
+}
+
+div.container {
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+span.response {
+    position: absolute;
+    z-index: 0;
+    transition: transform .5s ease;
+    transform: translate(480px);
+}
+
+span.response.active {
+    transform: translate(0);
+}

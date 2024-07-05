@@ -1,0 +1,74 @@
+@media (min-width: 400px) {
+    div.container {
+        width: 340px;
+    }
+
+    form.form, span.response  {
+        width: 340px;
+        height: 245px;
+        margin: 290px auto;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    form input {
+        height: 25px;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    form .concludeBt {
+        font: 14px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 600px) {
+    div.container {
+        width: 380px;
+    }
+
+    form.form, span.response  {
+        width: 380px;
+        height: 300px;
+        margin: 290px auto;
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    form input {
+        height: 40px;
+        padding: 2px 12px;
+        font-size: 16px;
+    }
+
+    form .concludeBt {
+        font-size: 16px;
+        width: 120px;
+    }
+}
+
+@media (min-width: 900px) {
+    div.container {
+        width: 480px;
+    }
+
+    form.form, span.response  {
+        width: 480px;
+        height: 340px;
+        margin: 150px auto;
+        padding: 50px 40px;
+        font-size: 20px;
+    }
+
+    form input {
+        height: 35px;
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+
+    form .concludeBt {
+        font-size: 18px;
+        width: 150px;
+    }
+}
