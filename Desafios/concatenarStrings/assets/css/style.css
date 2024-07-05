@@ -88,7 +88,27 @@ div.container {
     z-index: 1;
 }
 
+.material-symbols-outlined {
+    position: absolute;
+    margin-top: -15%;
+    margin-left: -5px;
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+}
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px #CECECE;
+}
+
 span.response {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     position: absolute;
     z-index: 0;
     transition: transform .5s ease;
@@ -97,4 +117,19 @@ span.response {
 
 span.response.active {
     transform: translate(0);
+}
+
+span.response h1 {
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+span.response p {
+    font-size: 14px;
+    width: 120px;
+    margin-left: 5%;
+}
+
+span.response img {
+    width: 150px;
 }

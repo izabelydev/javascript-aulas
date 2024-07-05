@@ -21,6 +21,19 @@
         font: 14px;
         width: 140px;
     }
+
+    span.response h1 {
+        font-size: 22px;
+    }
+    
+    span.response p {
+        font-size: 14px;
+        width: 140px;
+    }
+    
+    span.response img {
+        width: 170px;
+    }
 }
 
 @media (min-width: 600px) {
@@ -30,7 +43,7 @@
 
     form.form, span.response  {
         width: 380px;
-        height: 300px;
+        height: 320px;
         margin: 290px auto;
         padding: 30px;
         font-size: 16px;
@@ -45,6 +58,19 @@
     form .concludeBt {
         font-size: 16px;
         width: 120px;
+    }
+
+    span.response h1 {
+        font-size: 22px;
+    }
+    
+    span.response p {
+        font-size: 16px;
+        width: 160px;
+    }
+    
+    span.response img {
+        width: 190px;
     }
 }
 
@@ -70,5 +96,18 @@
     form .concludeBt {
         font-size: 18px;
         width: 150px;
+    }
+
+    span.response h1 {
+        font-size: 24px;
+    }
+    
+    span.response p {
+        font-size: 18px;
+        width: 180px;
+    }
+    
+    span.response img {
+        width: 200px;
     }
 }
