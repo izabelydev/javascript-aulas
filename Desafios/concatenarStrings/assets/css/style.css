@@ -71,7 +71,7 @@ form.form, span.response {
     margin: 190px auto;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     transition: transform .5s ease;
     transform: translate(-500px);
 }
