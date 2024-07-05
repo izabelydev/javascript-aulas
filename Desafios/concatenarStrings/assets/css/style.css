@@ -65,14 +65,14 @@ form .conclude {
 }
 
 form.form, span.response {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     width: 300px;
     height: 260px;
     margin: 190px auto;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     transition: transform .5s ease;
     transform: translate(-500px);
 }
