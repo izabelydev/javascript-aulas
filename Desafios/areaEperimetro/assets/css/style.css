@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --light-primary-color: #e1f2fd;
+    --primary-color: #5d9cfa; 
+    --primary-color-darker: #03719c;
+    --teste: #f86994;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    height: 365px;
+    margin: 50px auto 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color-darker);
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+.container.plus {
+    height: 420px;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+form input, form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 18px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: none;
+    background: var(--light-primary-color);
+}
+
+form input:focus {
+    outline:1px solid  var(--primary-color);
+}
+
+form input.btCalcular {
+    border: none;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color-darker);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+form input.btCalcular:hover {
+    background: var(--primary-color-darker);
+}
+
+div.buttons {
+    width: 640px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.buttons button {
+    border: none;
+    background: var(--light-primary-color);
+    border: 1px solid var(--primary-color-darker);
+    color: var(--primary-color-darker);
+    font-size: 18px;
+    font-weight: 700;
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+div.buttons button:hover{
+    background: var(--primary-color-darker);
+    color: #ffffff;
+}
+
+div.selecionar {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: var(--light-primary-color);
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
