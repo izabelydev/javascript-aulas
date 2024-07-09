@@ -21,7 +21,13 @@ body {
     line-height: 1.5em;
 }
 
-.container {
+/* Alinhamento de texto */
+p, h1 {
+    text-align: center;
+}
+
+/* Container onde estão todos os elementos filhos */
+section.container {
     max-width: 640px;
     height: 365px;
     margin: 50px auto 20px;
@@ -35,54 +41,26 @@ body {
     transition-timing-function: linear;
 }
 
-.container.plus {
+section.container.plus {
     height: 420px;
     transition-property: height;
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-p, h1 {
-    text-align: center;
-}
-
-form input, form label {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-form input {
-    font-size: 18px;
-    height: 50px;
-    padding: 0 20px;
-    border-radius: 8px;
-    border: none;
+/* div inicial com a frase "selecione um dos botões abaixo" */
+div.selecionar {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
     background: var(--light-primary-color);
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-form input:focus {
-    outline:1px solid  var(--primary-color);
-}
-
-form input.btCalcular {
-    border: none;
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color-darker);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 25px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all .5s;
-}
-
-form input.btCalcular:hover {
-    background: var(--primary-color-darker);
-}
-
+/* botões abaixo da div inicial: "área" e "perímetro" */
 div.buttons {
     width: 640px;
     display: flex;
@@ -110,13 +88,49 @@ div.buttons button:hover{
     color: #ffffff;
 }
 
-div.selecionar {
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    background: var(--light-primary-color);
+/* formulário para input da largura e comprimento */
+form.form {
+    transition: transform .5s ease;
+    transform: translate(700px);
+}
+
+form.form.active {
+    transform: translate(0);
+}
+
+form.form input {
+    display: block;
     width: 100%;
-    height: 240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
+}
+
+form.form input {
+    font-size: 18px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: none;
+    background: var(--light-primary-color);
+}
+
+form.form input:focus {
+    outline:1px solid  var(--primary-color);
+}
+
+form.form input.btCalcular {
+    border: none;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color-darker);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+form.form input.btCalcular:hover {
+    background: var(--primary-color-darker);
 }
