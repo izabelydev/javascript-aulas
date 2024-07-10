@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --light-primary-color: #e1f2fd;
+    --light-primary-color-bg: #bae1fc;
+    --primary-color: #5d9cfa; 
+    --primary-color-darker: #03719c;
+    --teste: #f86994;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 600px;
+    height: 480px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color-darker);
+}
+
+p, h1 {
+    text-align: center;
+}
+
+input.display {
+    font-size: 18px;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: var(--primary-color);
+    background: var(--light-primary-color-bg);
+}
+
+input.display:focus {
+    outline:1px solid  var(--primary-color-darker);
+}
+
+table.calculadora {
+    width: 400px;
+    margin: 0 auto;
+}
+
+button.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: 1.5px solid var(--light-primary-color-bg);
+    border-radius: 5px;
+    background: var(--light-primary-color-bg);
+    transition: all .5s;
+}
+
+button.btn:hover {
+    cursor: pointer;
+    border: 1.5px solid var(--primary-color-darker);
+}
+
+button.btn-clear, button.btn-del, button.btn-eq, button.symbol {
+    background: var(--primary-color);
+}
