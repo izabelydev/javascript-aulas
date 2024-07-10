@@ -60,12 +60,12 @@ section.container {
     width: 300px;
     height: 360px;
     padding: 30px 15px;
-    margin: auto;
+    margin: 0 auto;
     overflow: auto;
     display: grid;
     place-items: center;
     background: var(--transparent-white-bg);
-    filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 div.description.active,
