@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -59,6 +59,7 @@ section.container {
     width: 300px;
     height: 360px;
     padding: 30px 15px;
+    margin: auto;
     overflow: auto;
     display: grid;
     place-items: center;
