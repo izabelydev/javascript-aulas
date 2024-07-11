@@ -25,9 +25,7 @@ function classify() {
 
         pressEnter() {
             this.ageInput.addEventListener('keyup', event => {
-                if (event.keyCode === 13) {
-                    this.verifyInput();
-                }
+                if (event.keyCode === 13) this.verifyInput()
             });
         },
 
@@ -50,7 +48,6 @@ function classify() {
             } else {
                 this.closeInformationAuto();
                 this.content.classList.add('off');
-
                 this.result();
             }
         },
@@ -94,7 +91,6 @@ function classify() {
                     this.p.innerHTML = 'Idoso';
                     this.display.innerHTML = '<img src="./assets/css/img/idoso.png" alt="Idoso">';
                 }
-
                 this.btnInput.classList.remove('btn-input');
                 this.btnInput.classList.add('btn-back');
                 this.btnInput.setAttribute('value', 'Voltar');
