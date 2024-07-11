@@ -1,0 +1,61 @@
+/* Fonte: https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries */
+
+/* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
+@media (min-width: 575.98px) { 
+    div.content {
+        width: 60vw;
+        margin: 3vh auto;
+    }
+
+    aside.information {
+        width: 60vw;
+    }
+ }
+
+/* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
+@media (min-width: 767.98px) { 
+    div.content {
+        width: 50vw;
+        margin: 3vh auto;
+    }
+
+    aside.information {
+        width: 50vw;
+    }
+ }
+
+/* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
+@media (min-width: 991.98px) { 
+    div.content {
+        width: 40vw;
+        margin: 3vh auto;
+    }
+
+    aside.information {
+        width: 40vw;
+    }
+ }
+
+/* `xl` aplica-se a dispositivos grandes (desktops, menos de 1200px) */
+@media (min-width: 1199.98px) { 
+    div.content {
+        width: 30vw;
+        margin: 3vh auto;
+    }
+
+    aside.information {
+        width: 30vw;
+    }
+ }
+
+/* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
+@media (min-width: 1399.98px) { 
+    div.content {
+        width: 25vw;
+        margin: 3vh auto;
+    }
+
+    aside.information {
+        width: 25vw;
+    }
+ }
