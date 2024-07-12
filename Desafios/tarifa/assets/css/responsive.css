@@ -1,0 +1,112 @@
+/* -----------LARGURA-------------- */
+/* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
+@media (min-width: 575.98px) {
+    div.container {
+        width: 60vw;
+    }
+
+    div.container-resume {
+        width: 50vw;
+        height: 30vh;
+    }
+
+    span.close p {
+        width: 5%;
+    }
+}
+
+/* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
+@media (min-width: 767.98px) { 
+    div.container {
+        width: 50vw;
+    }
+
+    div.container-resume {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    span.close p {
+        width: 4%;
+    }
+}
+
+/* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
+@media (min-width: 991.98px) { 
+    div.container {
+        width: 35vw;
+    }
+
+    div.container-resume {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    span.close p {
+        font-size: 1rem;
+        width: 3%;
+        padding: .8% 0;
+    }
+}
+
+/* `xl` aplica-se a dispositivos grandes (desktops, menos de 1200px) */
+@media (min-width: 1199.98px) { 
+    div.container {
+        width: 35vw;
+    }
+
+    div.container-resume {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    span.close p {
+        font-size: 1rem;
+        width: 3%;
+        padding: .5% 0;
+    }
+}
+
+/* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
+@media (min-width: 1399.98px) { 
+    div.container {
+        width: 30vw;
+    }
+
+    div.container-resume {
+        width: 20vw;
+        height: 25vh;
+    }
+
+    span.close p {
+        font-size: 1rem;
+        width: 2%;
+        padding: .5% 0;
+    }
+}
+
+/* -----------ALTURA-------------- */
+/* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
+@media (max-height: 375.99px) {
+    div.container-resume {
+        height: 80vh;
+    }
+}
+
+@media (min-height: 376px) and (max-height: 575.99px) {
+    div.container-resume {
+        height: 60vh;
+    }
+}
+
+@media (min-height: 576px) and (max-height: 767.99px) {
+    div.container-resume {
+        height: 45vh;
+    }
+}
+
+@media (min-height: 768px) and (max-height: 991.99px) {
+    div.container-resume {
+        height: 35vh;
+    }
+}
