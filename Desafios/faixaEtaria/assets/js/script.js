@@ -38,11 +38,33 @@ function classify() {
             }
         },
 
+        
+        openInformation() {
+            this.information.classList.remove('off');
+            this.information.classList.add('on');
+        },
+        
+        closeInformationAuto() {
+            this.information.classList.remove('on');
+            this.information.classList.add('off');
+        },
+        
+        initialAnimation() {
+            this.content.classList.remove('off');
+            this.content.classList.add('on');
+        },
+        
+        finallylAnimation() {
+            this.content.classList.remove('on');
+            this.content.classList.add('off');
+        },
+
         verifyInput() {
-            if (this.ageInput.value === '' || !Number(this.ageInput.value)) {
+            const age = this.ageInput.value;
+            if (age === '' || !Number(age)) {
                 this.information.innerHTML = '<p>Insira apenas números</p>';
                 this.openInformation();
-            } else if (Number(this.ageInput.value) > 110) {
+            } else if (Number(age) < 0 || Number(age) > 110) {
                 this.information.innerHTML = '<p>Idade inválida</p>';
                 this.openInformation();
             } else {
@@ -52,28 +74,8 @@ function classify() {
             }
         },
 
-        openInformation() {
-            this.information.classList.remove('off');
-            this.information.classList.add('on');
-        },
-
-        closeInformationAuto() {
-            this.information.classList.remove('on');
-            this.information.classList.add('off');
-        },
-
-        initialAnimation() {
-            this.content.classList.remove('off');
-            this.content.classList.add('on');
-        },
-
-        finallylAnimation() {
-            this.content.classList.remove('on');
-            this.content.classList.add('off');
-        },
-
         result() {
-            const timer = setTimeout(() => {
+            setTimeout(() => {
                 this.initialAnimation();
                 this.h1.innerHTML = 'Classificação';
 
