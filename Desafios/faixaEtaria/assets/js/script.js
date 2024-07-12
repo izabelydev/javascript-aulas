@@ -50,8 +50,10 @@ function classify() {
         },
         
         initialAnimation() {
-            this.content.classList.remove('off');
-            this.content.classList.add('on');
+            setTimeout(() => {                
+                this.content.classList.remove('off');
+                this.content.classList.add('on');
+            }, 1000);
         },
         
         finallylAnimation() {
@@ -98,7 +100,7 @@ function classify() {
                 this.btnInput.setAttribute('value', 'Voltar');
                 this.display.appendChild(this.btnInput);
                 this.backButton();
-            }, 1000);
+            }, 500);
         },
     };
 }
